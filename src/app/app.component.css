@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  background-color: black;
+}
+
+.meetingtoday {
+  width: 400px;
+  background: linear-gradient(90deg, #FC466B 0%, #5c75ed 100%);
+  font-family: "Roboto", sans-serif;
+  color: #dbd8e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.meetingList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.userName {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.meetingTitle {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.numberOfPeople {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+#feedback-form {
+  width: 280px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 15px;
+  background-color: #fcfcfc;
+  padding: 14px 37px 50px;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  font-family: sans-serif;
+}
+
+#feedback-form * {
+  box-sizing: border-box;
+}
+
+#feedback-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+input {
+  border-radius: 6px;
+}
+
+#feedback-form input {
+  margin-bottom: 15px;
+}
+
+#feedback-form input[type=text] {
+  display: block;
+  height: 32px;
+  padding: 6px 16px;
+  width: 100%;
+  border: none;
+  background-color: #f3f3f3;
+}
+
+#feedback-form input[type=date] {
+  display: block;
+  height: 32px;
+  padding: 6px 16px;
+  width: 100%;
+  border: none;
+  background-color: #f3f3f3;
+}
+
+#feedback-form label {
+  color: #777;
+  font-size: 0.8em;
+}
+
+#feedback-form input[type=checkbox] {
+  float: left;
+}
+
+#feedback-form input:not(:checked)+#feedback-phone {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#feedback-form #feedback-phone {
+  transition: .3s;
+}
+
+.button {
+  display: block;
+  margin: 20px auto 0;
+  width: 300px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: #eee;
+  font-weight: 700;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  background: #207cca;
+  background: linear-gradient(to right, #207cca 0%, #9f58a3 100%);
+}
+
+.button1 {
+  display: block;
+  margin: 20px auto 0;
+  width: 300px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: #eee;
+  font-weight: 700;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  margin-bottom: 40px;
+  background: #207cca;
+}

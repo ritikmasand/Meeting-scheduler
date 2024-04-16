@@ -1,0 +1,33 @@
+<div [ngSwitch]="viewmode">
+
+  <div *ngSwitchCase="'meetingform'">
+    <div id="feedback-form">
+      <h3 class="header" style="text-align: center;">Where Connections Begin</h3>
+      <form>
+        <input type="text" [(ngModel)]="username" name="userName" placeholder="User Name" />
+        <input type="text" [(ngModel)]="meetingTitle" name="meetingTitle" placeholder="Title" />
+        <input type="text" [(ngModel)]="meetingRoom" name="meetingRoom" placeholder="Meeting Room" />
+        <input type="text" [(ngModel)]="numberOfPeople" name="numberOfPeople" placeholder="Number Of People" />
+        <input type="date" [(ngModel)]="data" name="date" />
+        <label for="feedback-notify">Remind me about this event via SMS</label>
+        <input type="checkbox" id="feedback-notify" name="notify" />
+        <input type="text" id="feedback-phone" name="phone" placeholder="Phone number" />
+        <button (click)="addMeeting()" class="button">Submit</button>
+      </form>
+    </div>
+  </div>
+ 
+  
+  <div *ngSwitchCase="'meetinglist'">
+    <button (click)="toggleMeetingForm()" class="button1">Add Meeting</button>
+    <div class="meetingList">
+      <div class="meetingtoday" *ngFor="let meeting of meetings">
+        <p><b>Name:</b> {{ meeting.userName }}</p>
+        <p><b>Meeting Room:</b> {{ meeting.meetingRoom }}</p>
+        <p><b>Title:</b> {{ meeting.meetingTitle }}</p>
+        <p><b>People:</b> {{ meeting.numberOfPeople }}</p>
+        <p><b>Date:</b> {{ meeting.date }}</p>
+      </div>
+    </div>
+  </div>
+</div>
